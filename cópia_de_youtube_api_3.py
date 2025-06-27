@@ -24,8 +24,8 @@ import os
 import httplib2 # Import httplib2
 
 # Insira sua chave da API do YouTube aqui
-# from google.colab import userdata
-# api_key = userdata.get('AIzaSyDag-9hsFQHH1cmnY9tasKMPPXP6SA9pWM')
+from google.colab import userdata
+api_key = userdata.get('AIzaSyDag-9hsFQHH1cmnY9tasKMPPXP6SA9pWM')
 api_key = os.environ.get('YOUTUBE_API_KEY')
 
 if not api_key:
