@@ -19,7 +19,9 @@ Original file is located at
 # Exemplo de carga por canal: https://github.com/Jeel-Kenia/Youtube-Data-Scrapping/blob/main/youtube.py
 
 # Como fazer a conexão
-api_key = st.secrets["YOUTUBE_API_KEY"]
+api_key = os.environ.get("YOUTUBE_API_KEY")
+if not api_key:
+    raise ValueError("A variável de ambiente YOUTUBE_API_KEY não está definida.")
 youtube = build('youtube', 'v3', developerKey=api_key)
 
 if not api_key:
