@@ -18,6 +18,11 @@ Original file is located at
 # Outras documentações úteis
 # Exemplo de carga por canal: https://github.com/Jeel-Kenia/Youtube-Data-Scrapping/blob/main/youtube.py
 
+import os
+from googleapiclient.discovery import build
+import httplib2
+import pandas
+
 # Como fazer a conexão
 api_key = os.environ.get("YOUTUBE_API_KEY")
 if not api_key:
