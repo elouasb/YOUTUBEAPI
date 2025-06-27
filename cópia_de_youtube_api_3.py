@@ -24,6 +24,9 @@ import httplib2
 import pandas
 
 # Como fazer a conexão
+
+YOUTUBE_API_KEY = "AIzaSyDag-9hsFQHH1cmnY9tasKMPPXP6SA9pWM"
+
 api_key = os.environ.get("YOUTUBE_API_KEY")
 if not api_key:
     raise ValueError("A variável de ambiente YOUTUBE_API_KEY não está definida.")
