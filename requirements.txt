@@ -1,7 +1,0 @@
-pandas
-wordcloud
-httplib2
-google-api-python-client
-matplotlib
-streamlit
-os
