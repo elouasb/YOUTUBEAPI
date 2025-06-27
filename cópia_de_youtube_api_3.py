@@ -7,7 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1ZBMrwgLIwp8A1Xwo5DceRG3-9y9ryCdC
 """
 
-!pip install google-api-python-client
 
 # Documentação Primária
 # https://developers.google.com/youtube/v3/docs/guideCategories?hl=pt-br
