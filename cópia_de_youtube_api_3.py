@@ -19,14 +19,8 @@ Original file is located at
 # Exemplo de carga por canal: https://github.com/Jeel-Kenia/Youtube-Data-Scrapping/blob/main/youtube.py
 
 # Como fazer a conexão
-from googleapiclient.discovery import build
-import os
-import httplib2 # Import httplib2
-
-# Insira sua chave da API do YouTube aqui
-from google.colab import userdata
-api_key = userdata.get('AIzaSyDag-9hsFQHH1cmnY9tasKMPPXP6SA9pWM')
-api_key = os.environ.get('YOUTUBE_API_KEY')
+api_key = st.secrets["YOUTUBE_API_KEY"]
+youtube = build('youtube', 'v3', developerKey=api_key)
 
 if not api_key:
     print("Error: YOUTUBE_API_KEY environment variable not set.")
