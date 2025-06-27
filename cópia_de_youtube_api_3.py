@@ -26,11 +26,11 @@ import pandas
 # Como fazer a conexão
 
 
-api_key = "AIzaSyDag-9hsFQHH1cmnY9tasKMPPXP6SA9pWM"
+YOUTUBE_API_KEY = "AIzaSyDag-9hsFQHH1cmnY9tasKMPPXP6SA9pWM"
 
 
 http = httplib2.Http()
-youtube = build('youtube', 'v3', developerKey=api_key, http=http, cache_discovery=False)
+youtube = build('youtube', 'v3', developerKey=YOUTUBE_API_KEYy, http=http, cache_discovery=False)
 
 if not api_key:
     raise ValueError("A variável de ambiente YOUTUBE_API_KEY não está definida.")
